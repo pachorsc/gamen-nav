@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="pockepacho.js"></script>
+    <link rel="stylesheet" href="Juegocss.css">
+</head>
+<body>
+    <section id="selec_mascota">
+        <h1 class="titulo">PokePacho  </h1>
+
+        <h3 class="subtitulo">elige tu guerrero</h3>
+
+        <div class="tarjetas">
+
+            <label class="tarjeta-de-pokepacho" for="whaterman">
+                <p class="nombretarjeta">waterman</p>
+                <img src="./imagenes/godzila.png" alt="WHATERMAN">
+            </label>
+            <input type="radio" name="mascota" id="whaterman">
+    
+            <label class="tarjeta-de-pokepacho" for="tierraman">
+                <p class="nombretarjeta">tierraman</p>
+                <img src="./imagenes/tierra-removebg-preview.png" alt="TIERRAMAN">
+            </label>
+            <input type="radio" name="mascota" id="tierraman">
+    
+            <label class="tarjeta-de-pokepacho" for="fuegoman">
+                <p class="nombretarjeta">fuegoman</p>
+                <img src="./imagenes/fuegoman-removebg-preview.png" alt="FUEGOMAN">
+            </label>
+            <input type="radio" name="mascota" id="fuegoman">
+    
+            <label class="tarjeta-de-pokepacho" for="pachomang">
+                <p class="nombretarjeta">pachomang</p>
+                <img src="./imagenes/pachomang.png" alt="PACHOMANG">
+            </label>
+            <input type="radio" name="mascota" id="pachomang">
+    
+            <label class="tarjeta-de-pokepacho" for="monicang">
+                <p class="nombretarjeta">monicang</p>
+                <img src="./imagenes/pacho-removebg-preview.png" alt="MONICANG">
+            </label>
+            <input type="radio" name="mascota" id="monicang">
+    
+            <label class="tarjeta-de-pokepacho" for="peepo">
+                <p class="nombretarjeta">peepo</p>
+                <img src="./imagenes/peepo-removebg-preview.png" alt="PEEPO">
+            </label>
+            <input type="radio" name="mascota" id="peepo">
+        </div>
+
+        <button id="boton-mascota">Seleccionar</button>
+
+
+    </section>
+
+
+    <section id="selec_ataque">  
+        <h3>elige tu ataque</h3>
+        <p>Tu personaje <span id="mascotajugador"></span> tiene <span id="vidaJugador">3</span> vidas</p>
+        <p>el enemigo <span id="mascotaenemigo"></span> tiene <span id="vidaenemigo">3</span> vidas</p>  
+    <p></p>
+        <p>
+            <button id="boton-fuego">Fuego🔥</button>
+            <button id="boton-agua">Agua💦</button>
+            <button id="boton-tierra">Tierra💩</button>
+        </p>
+    </section>
+
+    <section id="mensajes">
+    </section>
+
+    <section id="reiniciar">
+        <button id="boton-reiniciar">reiniciar</button>
+    </section>
+
+
+</body>
+</html>

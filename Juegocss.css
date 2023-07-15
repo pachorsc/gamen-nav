@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    background-color: #884A39;
+    font-family: 'VT323', monospace ;
+
+}
+
+input{display:none}
+
+.titulo {
+    color: black;
+    font-size: 64px;
+}
+
+.subtitulo {
+    color: black;
+    font-size: 32px;
+}
+
+#selec_mascota {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-pokepacho {
+    height: 256px;
+    background-color: #C38154;
+    width: 176px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #F59679;
+    border-radius: 20px;
+}
+
+#boton-mascota {
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #FFC26F;
+    margin-top: 20px;
+    border-radius: 10px;
+}
