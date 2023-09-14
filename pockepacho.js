@@ -65,7 +65,7 @@ function MascotaElegida(){
     } ;    
     seleccionarMascotaEnemigo()   
     let zonaAtaque = document.getElementById("selec_ataque")
-    zonaAtaque.style.display = "block";
+    zonaAtaque.style.display = "flex";
 
     let zonaPersonaje = document.getElementById("selec_mascota")
     zonaPersonaje.style.display = "none";

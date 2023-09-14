@@ -6,11 +6,14 @@ body{
 
 }
 
-input{display:none}
+input{
+    display:none
+}
 
 .titulo {
     color: black;
     font-size: 64px;
+    
 }
 
 .subtitulo {
@@ -49,4 +52,20 @@ input{display:none}
     background-color: #FFC26F;
     margin-top: 20px;
     border-radius: 10px;
+}
+
+#selec_ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #C38154;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'VT323', monospace ;
+    font-size: 20px;
 }
