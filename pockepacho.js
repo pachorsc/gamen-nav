@@ -127,7 +127,7 @@ function vidasTodos() {
 }
 function resultadoPelea() {
     if (ataqueJugador == ataqueEnemigo) {
-        resultado = "Empatasteis 😮💁‍♂️"
+        resultado = "Empatasteis 😮💁‍♂️";
     } else if ((ataqueJugador == "FUEGO") && (ataqueEnemigo == "TIERRA")) {
         resultado = "GANASTE 🐱‍👤😎"
     } else if ((ataqueJugador == "AGUA") && (ataqueEnemigo == "FUEGO")) {
@@ -140,7 +140,6 @@ function resultadoPelea() {
 } ;
 function revidionvidas() {
     if (vidasJugador == 0) {
-        alert("Perdiste 💀💀")
         historiafinal("Tu personaje se quedó sin vidas, PERDISTE 🙊💀💀")
         historiafinal("Buen combate, dale al botón reiniciar para volver a luchar 🥊🥊")
         let botonFuego = document.getElementById("boton-fuego")
@@ -156,7 +155,6 @@ function revidionvidas() {
         bReinicio.style.display = "block";
 
     } else if (vidasEnemigo == 0) {
-        alert("Ganaste 🏅🏅")
         historiafinal("El enemigo se quedó sin vidas, GANASTE 🦸‍♀️😎👾")
         historiafinal("buen combate, dale al botón reiniciar para volver a luchar 🥊🥊")
         let botonFuego = document.getElementById("boton-fuego")

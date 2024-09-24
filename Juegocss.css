@@ -44,30 +44,50 @@ input{
 
 .tarjeta-de-pokepacho:hover {
     background: black;
+    color: wheat;
     cursor: pointer ;
 }
 
 #boton-mascota {
     height: 50px;
     width: 150px;
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: #FFC26F;
     margin-top: 20px;
     border-radius: 10px;
 }
 
- #boton-mascota:hover {
+#boton-mascota:hover {
     background: black;
     color: wheat;
     cursor: pointer ;
- }
+}
+.form-label:focus {
+    background: black;
+    color: wheat;
+}
 
 #selec_ataque {
     flex-direction: column;
     align-items: center;
 }
 
+
 .boton-ataque {
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #C38154;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'VT323', monospace ;
+    font-size: 20px;
+}
+#reiniciar {
+    text-align: center;
+}
+#boton-reiniciar {
+    margin: auto;
     height: 50px;
     width: 150px;
     border: 1px solid black;
