@@ -3,14 +3,14 @@ let ataqueEnemigo
 let resultado
 let vidasJugador = 3;
 let vidasEnemigo = 3;
- 
+
+
 function iniciarJuego() {
     let zonaAtaque = document.getElementById("selec_ataque")
     zonaAtaque.style.display = "none";
 
     let bReinicio = document.getElementById("reiniciar")
     bReinicio.style.display = "none";
-
 
     document.getElementById("vidaJugador").innerHTML = vidasJugador;
     document.getElementById("vidaenemigo").innerHTML = vidasEnemigo;
@@ -29,15 +29,16 @@ function iniciarJuego() {
         botonTierra.addEventListener("click",ataqueTierra);
 
     let botonReinicio = document.getElementById("boton-reiniciar")
-        botonReinicio.addEventListener("click", reinicio)
+        botonReinicio.addEventListener("click", reinicio);
         
 }
+
 function aleatorio(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min)
 }
 function MascotaElegida(){
     if (document.getElementById("whaterman").checked) {
-       document.getElementById("mascotajugador").innerHTML = "Whaterman"
+       document.getElementById("mascotajugador").innerHTML = "Whaterman";
 
     }else if  (document.getElementById("tierraman").checked) {
         document.getElementById("mascotajugador").innerHTML = "Tierraman"

@@ -40,12 +40,21 @@ input{
     margin: 10px;
     border: 1px solid #F59679;
     border-radius: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer ;
+}
+input[type="radio"]:checked + label.tarjeta-de-pokepacho {
+    background-color: lightgreen; /* Fondo cuando está seleccionado */
+}
+
+/* Ocultar los inputs de radio para que solo se vean las tarjetas */
+input[type="radio"] {
+    display: none;
 }
 
 .tarjeta-de-pokepacho:hover {
     background: black;
     color: wheat;
-    cursor: pointer ;
 }
 
 #boton-mascota {
@@ -96,4 +105,9 @@ input{
     border-radius: 10px;
     font-family: 'VT323', monospace ;
     font-size: 20px;
+}
+#boton-reiniciar:hover , .boton-ataque:hover {
+    background: black;
+    color: wheat;
+    cursor: pointer;
 }
