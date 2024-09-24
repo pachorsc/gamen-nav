@@ -3,7 +3,6 @@
 body{
     background-color: #884A39;
     font-family: 'VT323', monospace ;
-
 }
 
 input{
@@ -13,7 +12,6 @@ input{
 .titulo {
     color: black;
     font-size: 64px;
-    
 }
 
 .subtitulo {
@@ -26,7 +24,6 @@ input{
     flex-direction: column ;
     justify-content: center;
     align-items: center;
-
 }
 
 .tarjetas {
@@ -45,6 +42,11 @@ input{
     border-radius: 20px;
 }
 
+.tarjeta-de-pokepacho:hover {
+    background: black;
+    cursor: pointer ;
+}
+
 #boton-mascota {
     height: 50px;
     width: 150px;
@@ -53,6 +55,12 @@ input{
     margin-top: 20px;
     border-radius: 10px;
 }
+
+ #boton-mascota:hover {
+    background: black;
+    color: wheat;
+    cursor: pointer ;
+ }
 
 #selec_ataque {
     flex-direction: column;

@@ -15,7 +15,7 @@ function iniciarJuego() {
     document.getElementById("vidaJugador").innerHTML = vidasJugador;
     document.getElementById("vidaenemigo").innerHTML = vidasEnemigo;
 
-    let botonMascotaJugador = document.getElementById("boton-mascota")
+    let botonMascotaJugador = document.getElementById("boton-mascota");
 
     botonMascotaJugador.addEventListener("click", MascotaElegida);
 
@@ -61,8 +61,10 @@ function MascotaElegida(){
 
     }
     else {
-        alert("por favor elige un personaje")
-    } ;    
+        alert("por favor elige un personaje");
+        window.location.reload(true);
+    } ; 
+
     seleccionarMascotaEnemigo()   
     let zonaAtaque = document.getElementById("selec_ataque")
     zonaAtaque.style.display = "flex";
