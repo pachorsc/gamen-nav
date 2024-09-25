@@ -92,6 +92,9 @@ input[type="radio"] {
     background: black;
     color: wheat;
 }
+#zona-combate {
+    width: 500px;
+}
 
 #selec_ataque {
     flex-direction: column;

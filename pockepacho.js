@@ -36,29 +36,38 @@ function iniciarJuego() {
 function aleatorio(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min)
 }
+
+//al hacer click en el boton se selecciona el pokepacho
 function MascotaElegida(){
     if (document.getElementById("whaterman").checked) {
        document.getElementById("mascotajugador").innerHTML = "Whaterman";
+       document.getElementById("AliadoImg").setAttribute("src", "./imagenes/godzila.png");
 
     }else if  (document.getElementById("tierraman").checked) {
-        document.getElementById("mascotajugador").innerHTML = "Tierraman"
+        document.getElementById("mascotajugador").innerHTML = "Tierraman";
+        document.getElementById("AliadoImg").setAttribute("src", "./imagenes/tierra-removebg-preview.png");
 
     }
     else if (document.getElementById("fuegoman").checked) {
-        document.getElementById("mascotajugador").innerHTML = "Fuegoman"
+        document.getElementById("mascotajugador").innerHTML = "Fuegoman";
+        document.getElementById("AliadoImg").setAttribute("src", "./imagenes/fuegoman-removebg-preview.png");
 
     }
     else if (document.getElementById("pachomang").checked) {
-        document.getElementById("mascotajugador").innerHTML = "Pachomang"
+        document.getElementById("mascotajugador").innerHTML = "Pachomang";
+        document.getElementById("AliadoImg").setAttribute("src", "./imagenes/pachomang.png");
 
     }
     else if (document.getElementById("monicang").checked) {
         document.getElementById("mascotajugador").innerHTML = "Monicang"
+        document.getElementById("AliadoImg").setAttribute("src", "./imagenes/pacho-removebg-preview.png");
 
     }
     else if (document.getElementById("peepo").checked) {
 
-        document.getElementById("mascotajugador").innerHTML = "Peepo"
+        document.getElementById("mascotajugador").innerHTML = "Peepo";
+        document.getElementById("AliadoImg").setAttribute("src", "./imagenes/peepo-removebg-preview.png");
+
 
     }
     else {
@@ -79,22 +88,28 @@ function MascotaElegida(){
 function seleccionarMascotaEnemigo(){
     let personaje = aleatorio(1,6)
     if (personaje == 1) {
-        document.getElementById("mascotaenemigo").innerHTML = "Whaterman"
+        document.getElementById("mascotaenemigo").innerHTML = "Whaterman";
+        document.getElementById("enemigoImg").setAttribute("src", "./imagenes/godzila.png");
     }
     else if (personaje == 2) {
-        document.getElementById("mascotaenemigo").innerHTML = "Tierraman"
+        document.getElementById("mascotaenemigo").innerHTML = "Tierraman";
+        document.getElementById("enemigoImg").setAttribute("src", "./imagenes/tierra-removebg-preview.png");
     }
     else if (personaje == 3) {
-        document.getElementById("mascotaenemigo").innerHTML = "Fuegoman"
+        document.getElementById("mascotaenemigo").innerHTML = "Fuegoman";
+        document.getElementById("enemigoImg").setAttribute("src", "./imagenes/fuegoman-removebg-preview.png");
     }
     else if (personaje == 4) {
-        document.getElementById("mascotaenemigo").innerHTML = "Pachomang"
+        document.getElementById("mascotaenemigo").innerHTML = "Pachomang";
+        document.getElementById("enemigoImg").setAttribute("src", "./imagenes/pachomang.png");
     }
     else if (personaje == 5) {
-        document.getElementById("mascotaenemigo").innerHTML = "Monicang"
+        document.getElementById("mascotaenemigo").innerHTML = "Monicang";
+        document.getElementById("enemigoImg").setAttribute("src", "./imagenes/pacho-removebg-preview.png");
     }
     else if (personaje == 6) {
-        document.getElementById("mascotaenemigo").innerHTML = "Peepo"
+        document.getElementById("mascotaenemigo").innerHTML = "Peepo";
+        document.getElementById("enemigoImg").setAttribute("src", "./imagenes/peepo-removebg-preview.png");
     }
 }
 function ataqueAleatorioEnemigo(){
