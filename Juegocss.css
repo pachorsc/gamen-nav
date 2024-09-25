@@ -93,7 +93,22 @@ input[type="radio"] {
     color: wheat;
 }
 #zona-combate {
-    width: 500px;
+    background-image: url("https://i.pinimg.com/originals/73/ac/48/73ac48c285e4843b41fadd077b1b41fe.gif"); 
+    width: 1200px;
+    height: 440px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.combatientes {
+    width: 200px;
+    margin: 20px;
+}
+.combatientes img {
+    width: 100%;
+}
+#enemigoImg {
+    transform: scaleX(-1);
 }
 
 #selec_ataque {

@@ -131,8 +131,7 @@ function ataqueAleatorioEnemigo(){
 };
 function vidasTodos() {
     if (resultado =="Empatasteis 😮💁‍♂️") {
-        vidasEnemigo = vidasEnemigo -1;
-        vidasJugador = vidasJugador -1;
+        console.log("aqui llego el empate");
     } else if (resultado =="GANASTE 🐱‍👤😎"){
         vidasEnemigo = vidasEnemigo -1;
     } else {
